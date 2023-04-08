@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './header.css'
+import ActiveLink from '../ActiveLink/ActiveLink'
 export const Header = () => {
 return (
 // <div>
@@ -11,8 +12,8 @@ return (
     //use to to remove load
 <nav>
     <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/contact">Contact</Link>
+    <ActiveLink to="/about">About</ActiveLink>
+    <ActiveLink to="/contact">Contact</ActiveLink>
     <Link to="/friends">friends</Link>
     <Link to="/posts">posts</Link>
 </nav>

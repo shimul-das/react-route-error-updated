@@ -1,0 +1,8 @@
+// We have learned this modiule
+1) React RouterProvider
+2) RouterProvider
+3) Nested RouterProvider
+4) Dynamic RouterProvider
+5) Route data load
+6) Active status
+7) 404 not found

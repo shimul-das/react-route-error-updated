@@ -59,13 +59,17 @@ element:<Posts></Posts>,
 loader:()=>fetch('https://jsonplaceholder.typicode.com/posts')
 },
 {
-  path:'/post:postId',
+  path:'post/:postId',
   element:<PostDetail></PostDetail>,
-  loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.postId}`)
+  loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
   },
 {
 path:'contact',
 element:<Contact></Contact>
+},
+{
+  path:'*',
+  element:<div>444444444444444404</div>
 }
 ]
 }
@@ -76,3 +80,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   {/*
   <App /> */}
   {/* <Header></Header> */}
+
+
+</React.StrictMode>,
+)
